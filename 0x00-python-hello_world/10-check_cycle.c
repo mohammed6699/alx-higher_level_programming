@@ -13,10 +13,10 @@ int check_cycle(listint_t *list)
 	listint_t *node = list;
 	listint_t *data = list;
 
-	while (node && data->next)
+	while (node && node->next)
 	{
 		data = data->next;
-		node = data->next->next;
+		node = node->next->next;
 		if (node == data)
 			return (1);
 	}
