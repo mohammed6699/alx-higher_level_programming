@@ -10,14 +10,13 @@
 
 int check_cycle(listint_t *list)
 {
-	listint_t *node = list;
-	listint_t *data = list;
+	listint_t *first = list, *second = list;
 
-	while (node && node->next)
+	while (first && first->next)
 	{
-		data = data->next;
-		node = node->next->next;
-		if (node == data)
+		second = second->next;
+		first = first->next->next;
+		if (first == second)
 			return (1);
 	}
 	return (0);
