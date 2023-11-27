@@ -6,6 +6,8 @@
  * check_cycle - function to check the cycle of the list
  * @list: pointer to the list created
  * Return: (0) fail, (1) success
+ */
+
 int check_cycle(listint_t *list)
 {
 	listint_t *node = list;
