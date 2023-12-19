@@ -2,4 +2,5 @@
 
 
 class Square:
+    # Define a square module
     pass
