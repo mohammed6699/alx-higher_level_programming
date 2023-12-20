@@ -13,7 +13,7 @@ class Square:
 
     @property
     def size(self):
-        """property to determine the size os=f square
+        """property to determine the size of square
 
         Raises:
             TypeError: if the size is not int
