@@ -1,10 +1,11 @@
 #!/usr/bin/python3
+"""Square model"""
+
 class Square:
-    """define a square"""
+    """Define a square"""
 
     def __init__(self, size=0):
-         """Constructor
-
+        """Constructor
         Args:
             size: length of a side of square
         """
