@@ -1,0 +1,59 @@
+The '''print_square''' Module
+
+import module:
+>>>print_square = __import__('4-print_square').print_square
+
+Test 0 module:
+	>>>print_square(0)
+	
+Test print 1:
+	>>>print_square(1)
+	#
+
+Test print 2:
+	>>>print_square(2)
+	##
+	##
+
+Test print 3:
+	>>>print_square(3)
+	###
+	###
+	###
+
+Test print 10:
+	>>>print_square(10)
+	##########
+	##########
+	##########
+	##########
+	##########
+	##########
+	##########
+	##########
+	##########
+	##########
+
+Test negative number:
+	>>>print_square(-10)
+	Traceback (most recent call last)
+	...
+	ValueError: size must be >= 0
+
+Test float arg:
+	print_square(10.5)
+	Traceback (most recent call last)
+	...
+	TypeError: size must be an integer
+
+Test not int:
+	>>>print_square('nan')
+	Traceback(most recent call last)
+	...
+	TypeError: size must be an integer
+
+Test missing 1 arg:
+	>>>print_square()
+	Traceback(most recent call last)
+	...
+	TypeError: print_square() missing 1 arg: 'size'
