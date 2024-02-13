@@ -1,0 +1,108 @@
+"""The text_indentation Module"""
+
+import module:
+	>>>text_indentation = __import__("5-text_indentation").text_indentation
+
+Test basic:
+	>>>text_indentation("Mohamed Ahmed")
+	Mohamed Ahmed
+
+Test only one arg:
+	>>>text_indentation("Mohamed")
+	Mohamed
+
+Test only one arg with spaces after:
+	>>>text_indentation("Mohamed            ")
+	Mohamed
+
+Test only one arg with spaces before:
+	>>>text_indentation("		Mohamed")
+	Mohamed
+
+Test only one arg with spaces before and after:
+	>>>text_indentation("		Mohamed		")
+	Mohamed
+
+Test empty str:
+	>>>text_indentation("")
+	
+Test simple only one delim:
+	>>>text_indentation("Mohamed:Ahmed")
+	Mohamed
+	<BLANKLINE>
+	Ahmed
+
+Test str with two delim:
+	>>>text_indentation("Mohamed,Ahmed:Refat")
+	Mohamed,
+	<BLAMKLINE>
+	Ahmed:
+	<BLANKLINE>
+	Refat
+
+Test newline:
+	>>>text_indentation("\n")
+	<BLANKLINE>
+
+Test two new lines:
+	>>>text_indentation(\n\n)
+	<BLANKLINE>
+	<BLANKLINE>
+	
+Test one arg with two newlines:
+	>>>text_indentation("Mohamed\n\n")
+	Mohamed
+	<BLANKLINE>
+	<BLANKLINE>
+
+Test all delimters in one statement:
+	>>>text_indentation("Hello	:	Holberton	,	school")
+	Hello:
+	<BLANKLINE>
+	Holberton,
+	<BLANKLINE>
+	school
+
+Test all delimters with space at the end:
+	>>>text_indentation("Hello	:	Holberton	,	school	")
+	Hello:
+	<BLANKLINE>
+	Holberton,
+	<BLANKLINE>
+	school
+	<BLANKLINE>
+
+Test only delimters:
+	>>>text_indentation(".?:")
+	.
+	<BLANKLINE>
+	?
+	<BLANKLINE>
+	:
+
+Test two delimters:
+	>>>text_indentation(".?")
+	.
+	<BLANKLINE>
+	?
+
+Test one delimter with space before and after:
+	>>>text_indentation("	?	")
+	<BLANKLINE>
+	?
+	<BLANKLINE>
+	<BLANKLINE>
+
+Test none:
+	>>>text_indentation("none")
+	Traceback ('most recent call last')
+	...
+	TypeError: text must be a string
+
+Test int:
+	>>>text_indentation(55)
+	Traceback ('most recent call last')
+	...
+	TypeError: text must be a string
+
+
