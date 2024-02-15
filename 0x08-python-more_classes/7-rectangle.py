@@ -46,16 +46,16 @@ class Rectangle:
 
     def area(self):
         """instance attribute to define the area of rectangle"""
-        return (self.__width) * (self.__height)
+        return (self.width) * (self.height)
 
     def perimeter(self):
         """instance attribute to defien the perimeter of rectangle"""
-        return (self.__width * 2) + (self.__height * 2)
+        return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
-        if self.__width == 0 and self.__height == 0:
+        if self.width == 0 and self.height == 0:
             return ""
-        return ("\n".join('#' * self.__width)for j in range (self.__height))
+        return ((str(self.print_symbol) * self.width + "\n") * self.height)[:-1]
 
     def __repr__(self):
         """return  a string represntation of rectangle"""
