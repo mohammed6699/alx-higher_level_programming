@@ -6,8 +6,8 @@ class Rectangle:
     """rep. for the class Rectangle"""
     def __init__(self, width=0, height=0):
         """initialize the the class rectangle"""
-        self.height = height
         self.width = width
+        self.height = height
 
     @prpperty
     def width(self):
