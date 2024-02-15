@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
-"""module to define the area and prameter by class Rectangle"""
+"""
+    module to define the area and prameter by class Rectangle
+"""
 
 class Rectangle:
     """rep. for the class Rectangle"""
@@ -9,7 +11,7 @@ class Rectangle:
         self.width = width
         self.height = height
 
-    @prpperty
+    @property
     def width(self):
         """getter for private instance width"""
         return self.__width
