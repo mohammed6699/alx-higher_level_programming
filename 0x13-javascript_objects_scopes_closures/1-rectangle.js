@@ -5,3 +5,4 @@ module.exports = class Rectangle {
 		thisi.height = h;
 	}
 };
+
