@@ -7,4 +7,3 @@ fi
 
 response=$(curl -sL -X DELETE "$1")
 echo "I'm a DELETE request"
-echo "$response"
