@@ -3,7 +3,7 @@
 import sys
 import requests
 if __name__ == "__main__":
-    r = sys.argv[1]
+    url = sys.argv[1]
 
-    x = reauests.get(r)
+    x = reauests.get(url)
     print(x.headers.get("X-Request-Id"))
