@@ -6,7 +6,7 @@ import sys
 import requests
 
 if __name__ == "__main__":
-    url = "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"
+    url = sys.argv[1]
     params = {"search": sys.argv[1]}
     results = requests.get(url, params=params).json()
 
