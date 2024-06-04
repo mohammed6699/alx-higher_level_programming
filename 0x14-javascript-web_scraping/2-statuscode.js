@@ -10,5 +10,5 @@ const request = require('request');
 request.get(process.argv[2])
 //http request import
         .on ('response', function (response) {
-        console.log('code: ${ response.statuscode}');
-});
+        console.log(`code: ${ response.statuscode}`);
+	});
